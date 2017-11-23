@@ -1,4 +1,32 @@
 spring:
+  server:
+    port: 8080
+
+  security:
+    signing-key: MaYzkSjmkzPC57L
+    encoding-strength: 256
+    security-realm: Spring Boot JWT Example Realm
+    oauth2:
+      resource:
+        filter-order: 3
+
+    jwt:
+      client-id: test-web-clientid
+      client-secret: XY7kmzoNzl100
+      grant-types:
+        - password
+        - client-credentials
+        - refresh_token
+      scopes:
+        - read
+        - write
+        - trust
+      scope-read: read
+      scope-write: write
+      resource-ids: test-oauth2-resourceid
+      access-token-validity: 5000
+      refresh-token-validity: 50000
+
 logging:
   # -- log to file --
   # if you use 'logging.path', then the log file is created relative to that path
@@ -9,6 +37,6 @@ logging:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(18971){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
     file: "%d %-5level [%thread] %logger : %msg%n"
   level:
-    org.springframework.web: INFO
-    com.example.demo: DEBUG
-    com.example.helper: WARN
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    com.standard.demo: DEBUG
