@@ -12,8 +12,8 @@ spring:
 
     jwt:
       client-id: test-web-clientid
-      client-secret: XY7kmzoNzl100
-      grant-types:
+#      client-secret: XY7kmzoNzl100
+      grantTypes:
         - password
         - client-credentials
         - refresh_token
@@ -31,7 +31,7 @@ logging:
   # -- log to file --
   # if you use 'logging.path', then the log file is created relative to that path
   # path: some/path
-  #file: logs/spring-boot.log
+  file: logs/springboot-authn-server-demo.log
   pattern:
     #console: "%d %-5level %logger : %msg%n"
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(18971){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"

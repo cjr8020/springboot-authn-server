@@ -68,7 +68,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
           .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()
         .authorizeRequests()
-          .antMatchers("/actuator/**", "/oauth/token").permitAll()
+          .antMatchers("/actuator/**").permitAll()
         .and()
         .authorizeRequests()
           .anyRequest().authenticated()
@@ -82,4 +82,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
           )
     ;
   }
+
+//  @Override
+//  protected void configure(HttpSecurity http) throws Exception {
+//    http
+//        .sessionManagement()
+//        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+//        .and()
+//        .authorizeRequests()
+//        .antMatchers("/actuator/**", "/api-docs/**").permitAll()
+//        .and()
+//        .httpBasic()
+//        .realmName(securityRealm)
+//        .and()
+//        .csrf()
+//        .disable();
+//
+//  }
+
 }
