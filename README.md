@@ -69,6 +69,10 @@ response:
 
 ## TODO: refresh token
 
+https://github.com/spring-projects/spring-security-oauth/issues/813
+
+https://stackoverflow.com/questions/43842659/refresh-token-call-fails-using-spring-security-an-oauth2-with-error-userdetails
+
 error:
 
 ```
