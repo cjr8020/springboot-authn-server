@@ -4,7 +4,6 @@ spring:
 
   security:
     signing-key: MaYzkSjmkzPC57L
-    encoding-strength: 256
     security-realm: Spring Boot JWT Example Realm
     oauth2:
       resource:
