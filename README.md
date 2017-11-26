@@ -51,7 +51,7 @@ the password is not provided.
 
 
 ```
-$ curl -X POST test-web-clientid:@localhost:8080/oauth/token -d grant_type=password -d username=john.doe -d password=jwtpass
+$ curl -X POST test-web-clientid:@localhost:8080/oauth/token -d grant_type=password -d username=john.doe -d password=demopass
 ```
 
 response:

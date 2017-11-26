@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.standard.demo</groupId>
-  <artifactId>spring-security-oauth2-demo</artifactId>
+  <artifactId>spring-oauth2-authn-server-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spring-security-oauth2-demo</name>
+  <name>spring-oauth2-authn-server-demo</name>
   <description>Demo project for Spring OAuth2 Authn Server</description>
 
   <parent>
