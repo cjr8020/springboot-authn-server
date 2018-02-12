@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/oauth/token (Untrusted client) - john.doe STANDARD_USER",
+			"name": "http://localhost:8888/oauth/token (Untrusted client) - john.doe STANDARD_USER",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -76,76 +76,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/oauth/token (Untrusted client) - admin.admin ADMIN_USER copy",
-			"request": {
-				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "username",
-							"value": "test-web-clientid",
-							"type": "string"
-						},
-						{
-							"key": "password",
-							"value": "",
-							"type": "string"
-						},
-						{
-							"key": "saveHelperData",
-							"type": "any"
-						},
-						{
-							"key": "showPassword",
-							"value": false,
-							"type": "boolean"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "grant_type",
-							"value": "password",
-							"type": "text"
-						},
-						{
-							"key": "username",
-							"value": "john.doe",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "demopass",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "http://localhost:8080/oauth/token",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"oauth",
-						"token"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/oauth/token (refresh)",
+			"name": "http://localhost:8888/oauth/token (refresh)",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -194,12 +125,12 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8080/oauth/token",
+					"raw": "http://localhost:8888/oauth/token",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8888",
 					"path": [
 						"oauth",
 						"token"
@@ -209,7 +140,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/oauth/token (Untrusted client) - admin.admin ADMIN_USER copy",
+			"name": "http://localhost:8888/oauth/token (Untrusted client) - john.doe STANDARD_USER",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -252,7 +183,7 @@
 						},
 						{
 							"key": "username",
-							"value": "admin.admin",
+							"value": "john.doe",
 							"type": "text"
 						},
 						{
@@ -263,12 +194,12 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8080/oauth/token",
+					"raw": "http://localhost:8888/oauth/token",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8888",
 					"path": [
 						"oauth",
 						"token"

@@ -1,7 +1,7 @@
-spring:
-  server:
-    port: 8080
+server:
+  port: 8888
 
+spring:
   security:
     signing-key: MaYzkSjmkzPC57L
     security-realm: Spring Boot JWT Example Realm
