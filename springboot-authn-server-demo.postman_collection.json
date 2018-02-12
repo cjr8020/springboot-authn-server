@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8888/oauth/token (Untrusted client) - john.doe STANDARD_USER",
+			"name": "get JWT -  (Untrusted client) - john.doe STANDARD_USER",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -140,7 +140,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8888/oauth/token (Untrusted client) - john.doe STANDARD_USER",
+			"name": "get JWT -  (Untrusted client) - admin.admin ADMIN_USER",
 			"request": {
 				"auth": {
 					"type": "basic",
